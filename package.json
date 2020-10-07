@@ -1,10 +1,10 @@
 {
-  "name": "your-project-name",
+  "name": "discord.ts",
   "version": "0.0.1",
-  "description": "Your project description.",
+  "description": "Discord.ts is a library written in Typescript allowing you to simply, efficiently and quickly code your bots while having control over them. The library is not overloaded in order to guarantee lightness and optimization to everyone's expectations.",
   "main": "src/index.ts",
-  "repository": "project-repository-url",
-  "author": "Author's username <Author's mail>",
+  "repository": "https://github.com/NessMC/discord.ts.git",
+  "author": "NessMC <contact@nessmc.fr>",
   "scripts": {
     "build": "./node_modules/.bin/tsc",
     "dev": "./node_modules/.bin/ts-node --project tsconfig.json -r tsconfig-paths/register .\\src\\index.ts",
