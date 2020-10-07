@@ -10,7 +10,8 @@
     "module": "CommonJS",
     "types": [
       "node",
-      "jest"
+      "jest",
+      "ws"
     ],
     "moduleResolution": "node",
     "downlevelIteration": true,
