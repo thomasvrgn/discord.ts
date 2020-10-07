@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "rootDirs": [
+      "src/",
+      "tests"
+    ],
+    "outDir": "./dist",
+    "watch": true,
+    "target": "es5",
+    "module": "CommonJS",
+    "types": [
+      "node",
+      "jest"
+    ],
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.test.ts"
+  ],
+  "files": [
+    "src/index.ts"
+  ]
+}

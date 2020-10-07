@@ -1,0 +1,40 @@
+{
+  "name": "your-project-name",
+  "version": "0.0.1",
+  "description": "Your project description.",
+  "main": "src/index.ts",
+  "repository": "project-repository-url",
+  "author": "Author's username <Author's mail>",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "dev": "./node_modules/.bin/ts-node --project tsconfig.json -r tsconfig-paths/register .\\src\\index.ts",
+    "dev:watch": "nodemon src/index.ts --exec \"npm run dev\" --ignore *.json",
+    "lint": "./node_modules/.bin/eslint .",
+    "lint:watch": "./node_modules/.bin/esw **/*.ts -w",
+    "lint:fix": "./node_modules/.bin/eslint . --fix",
+    "test": "./node_modules/.bin/jest",
+    "test:watch": "./node_modules/.bin/jest --watch",
+    "bundle": "./node_modules/.bin/webpack-cli",
+    "bundle:watch": "./node_modules/.bin/webpack-cli --watch",
+    "docker:build": "docker build -t your-project .",
+    "docker:run": "docker run your-project"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-typescript": "^11.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.4.1",
+    "ts-loader": "^8.0.4",
+    "ts-node": "^9.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
